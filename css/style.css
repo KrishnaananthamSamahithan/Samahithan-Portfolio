@@ -804,17 +804,33 @@ h3.my-profession
   {
     color:#0A66C2; /* Change the color as needed */
   }
+  .social-media .linkedin:hover 
+  {
+    color: var(--skin-color);
+  }
   .social-media .github
   {
     color:  #171515; /* Change the color as needed */
+  }
+  .social-media .github:hover 
+  {
+    color: var(--skin-color);
   }
   .social-media .facebook
   {
     color: #3b5998; /* Change the color as needed */
   }
+  .social-media .facebook:hover 
+  {
+    color: var(--skin-color);
+  }
   .social-media .twitter
   {
     color: #1da1f2; /* Change the color as needed */
+  }
+  .social-media .twitter:hover 
+  {
+    color: var(--skin-color);
   }
   .social-media .instagram
   {
@@ -822,6 +838,10 @@ h3.my-profession
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+  }
+  .social-media .instagram:hover 
+  {
+    color: var(--skin-color);
   }
 
   
