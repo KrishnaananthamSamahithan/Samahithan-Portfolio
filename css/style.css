@@ -782,6 +782,49 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+.social-media {
+    margin-top:-5px;
+    padding-bottom: 30px;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+     /* Change the color as needed */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: red; /* Change the hover color as needed */
+    transform: scale(1.5);
+  }
+  .social-media .linkedin
+  {
+    color:#0A66C2; /* Change the color as needed */
+  }
+  .social-media .github
+  {
+    color:  #171515; /* Change the color as needed */
+  }
+  .social-media .facebook
+  {
+    color: #3b5998; /* Change the color as needed */
+  }
+  .social-media .twitter
+  {
+    color: #1da1f2; /* Change the color as needed */
+  }
+  .social-media .instagram
+  {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  
 @media (max-width:1199px)
 {
     .section .container
