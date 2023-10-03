@@ -84,15 +84,14 @@ const nav = document.querySelector(".nav"),
                 allSection[i].classList.toggle("open");
             }
         }
-        document.addEventListener('DOMContentLoaded', function () {
-            const socialLinks = document.querySelectorAll('.social-link');
-          
-            socialLinks.forEach(function (link) {
-              link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const url = this.getAttribute('href');
-                window.open(url, '_blank');
-              });
-            });
-          });
-          
+    document.addEventListener('DOMContentLoaded', function () {
+  const socialLinks = document.querySelectorAll('.social-link');
+
+  socialLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const url = this.getAttribute('href');
+      window.open(url, '_blank');
+    });
+  });
+});

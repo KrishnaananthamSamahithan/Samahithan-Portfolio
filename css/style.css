@@ -360,10 +360,16 @@ h3.my-profession
 .home .home-img
 {
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 30%;
+    margin-left: 50px;
     text-align: center;
     position: relative;
-}.home-img::after
+    border: 6px solid var(--skin-color);
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--skin-color);
+}
+/*
+.home-img::after
 {
     content: '';
     position: absolute;
@@ -371,8 +377,8 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 40px;
+    bottom: -20px;
 
 }
 .home-img::before
@@ -383,15 +389,17 @@ h3.my-profession
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 20px;
-    top: -40px;
-
-}
+    left: 80px;
+    top: -20px;
+}*/
 .home .home-img img
 {
     margin: auto;
+    padding-bottom: 35px;
     border-radius: 5px;
-    height: 400px;
+    /*border-color: var(--skin-color);*/
+    height: 500px;
+    transform: scale(1.2);
 }
 
 /* About */
