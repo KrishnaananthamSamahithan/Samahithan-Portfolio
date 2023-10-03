@@ -1,9 +1,11 @@
- /* toggle Style Switcher */
-const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-styleSwitcherToggle.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.toggle("open");
-})
+ document.addEventListener("DOMContentLoaded", () => {
+        const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+        const styleSwitcher = document.querySelector(".style-switcher");
 
+        styleSwitcherToggle.addEventListener("click", () => {
+            styleSwitcher.classList.toggle("open");
+        });
+    });
 /* Hide style switcher on scroll */
 window.addEventListener("scroll", () => {
     if(document.querySelector(".style-switcher").classList.contains("open"))
@@ -12,11 +14,11 @@ window.addEventListener("scroll", () => {
     }
 })
 /* Theme Color */
-const alternateStyles = document.querySelectorAll(".alternative-style");
+const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(Color)
 {
     alternateStyles.forEach((style) => {
-        if(olor === style.getAttribute("title"))
+        if(Color === style.getAttribute("title"))
         {
             style.removeAttribute("disabled");
         } 

@@ -11,8 +11,8 @@
   transition: all 0.3s ease;
   transform: translateX(100%);
 }
-.style-switcher .open {
-  transform: translateX(-);
+.style-switcher.open {
+  transform: translateX(-25px);
 }
 
 .style-switcher .s-icon {
