@@ -93,9 +93,6 @@
                                             <p> Age: <span>23</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Website : <span>www. domain.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
                                             <p> Email : <span>k.samahithan@gmail.com</span></p>
                                         </div>
                                         <div class="info-item padd-15">
@@ -200,7 +197,27 @@
                                     <h3 class="title"> Education</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
+                                            <div class="timeline shadow-dark"> 
+                                                 <!--timeline item -->
+                                                 <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022 - Present
+                                                    </h3>
+                                                    <h4 class="timeline-title"> BEng(hons)Software Engineering</h4>
+                                                    <p class="timeline-text"> I’m an enthusiastic, responsible and hard working IT person. Bening worked for diffrent academic and individual projects helped me to adopt to the changes quickly and made me a mature team worker. I’m able to work well both in a team environment as well as using own initiative. I’m able to work well under pressure and adhere to strict deadlines.</p>   
+                                                </div>
+                                                
+                                                <!--timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2021 -2022
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Foundation for Higher Education</h4>
+                                                    <p class="timeline-text"> I’m an enthusiastic, responsible and hard working IT person. Bening worked for diffrent academic and individual projects helped me to adopt to the changes quickly and made me a mature team worker. I’m able to work well both in a team environment as well as using own initiative. I’m able to work well under pressure and adhere to strict deadlines.</p>   
+                                                </div>                                            
+
                                                 <!--timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
@@ -239,17 +256,7 @@
                                                     </h3>
                                                     <h4 class="timeline-title"> Diplima In English</h4>
                                                     <p class="timeline-text"> I’m an enthusiastic, responsible and hard working IT person. Bening worked for diffrent academic and individual projects helped me to adopt to the changes quickly and made me a mature team worker. I’m able to work well both in a team environment as well as using own initiative. I’m able to work well under pressure and adhere to strict deadlines.</p>   
-                                                </div>
-
-                                                <!--timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2021 -2022
-                                                    </h3>
-                                                    <h4 class="timeline-title"> Foundation for Higher Education</h4>
-                                                    <p class="timeline-text"> I’m an enthusiastic, responsible and hard working IT person. Bening worked for diffrent academic and individual projects helped me to adopt to the changes quickly and made me a mature team worker. I’m able to work well both in a team environment as well as using own initiative. I’m able to work well under pressure and adhere to strict deadlines.</p>   
-                                                </div>
+                                                </div>                                                
                                             </div>
                                         </div>
                                     </div>
@@ -310,7 +317,7 @@
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
-                                <h4>Web Design</h4>
+                                <h4>Software Development</h4>
                                 <p>I’m an enthusiastic, responsible and hard working IT person.</p>
                             </div>
                         </div>
@@ -482,25 +489,26 @@
                     <h3 class="contact-title padd-15"> SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15"> I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- Contact Form -->
+                    <form action="https://formspree.io/f/mrgwvzbv" method="post">
                     <div class="row">
                         <div class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                                     </div>
                                 </div>
 
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                                     </div>
                                 </div>
                             </div>
@@ -508,7 +516,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message" ></textarea>
+                                        <textarea name="message" class="form-control" id="message" placeholder="Message" ></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -522,6 +530,7 @@
                             </div>
                         </div>
                     </div>
+                    </form>
                 </div>
             </section>
             <!-- Contact Section End -->
