@@ -910,7 +910,22 @@ h3.my-profession
     }
     .home .home-img
     {
-        display: none;
+        margin-top: 50px;
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+        border: 6px solid var(--skin-color);
+        border-radius: 5px;
+        box-shadow: 0 0 20px var(--skin-color);
+    }
+    .home .home-img img
+    {
+        margin: auto;
+        padding-bottom: 28px;
+        border-radius: 5px;
+        /*border-color: var(--skin-color);*/
+        height: 400px;
+        transform: scale(1.2);
     }
 }
 @media (max-width:767px)
