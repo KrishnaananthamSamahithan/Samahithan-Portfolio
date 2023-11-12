@@ -818,7 +818,7 @@ h3.my-profession
   }
   .social-media .github
   {
-    color:  #171515; /* Change the color as needed */
+    color: #171515; /* Change the color as needed */
   }
   .social-media .github:hover 
   {
@@ -944,5 +944,6 @@ h3.my-profession
     {
         flex: 0 0 100%;
         max-width: 100%;
+        margin-bottom: 50px;
     }
 }
