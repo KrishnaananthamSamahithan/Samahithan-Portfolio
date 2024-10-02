@@ -852,6 +852,19 @@ h3.my-profession
     color: var(--skin-color);
   }
 
+  /* Default (Light Mode) */
+.social-link.github i {
+    color: #000; /* Set default color (black or any visible color in light mode) */
+  }
+  
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .social-link.github i {
+      color: #fff; /* Set color to white or a visible color in dark mode */
+    }
+  }
+  
+
   
 @media (max-width:1199px)
 {
