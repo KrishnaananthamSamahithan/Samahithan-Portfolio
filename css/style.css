@@ -1051,32 +1051,53 @@ body.dark .social-media .github i {
 
     .home .home-img {
         margin: 20px auto;
-        width: 100%;
-        height: auto;
-        padding: 10px;
+        margin-top: 50px;
+        width: 300px;
+        height: 400px;
+        padding: 0;
         box-shadow: 0 0 15px var(--skin-color);
+        position: relative;
+        overflow: visible;
     }
 
     .home .home-img img {
-        position: relative;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
         height: auto;
-        bottom: auto;
         transform: none;
         padding-bottom: 0;
         z-index: 2;
     }
 
     .home .home-img::before {
-        border-radius: 10px;
-        border: 3px solid var(--skin-color);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 5px solid var(--skin-color);
         border-bottom: none;
+        border-radius: 10px 10px 0 0;
         box-shadow: 0 0 15px var(--skin-color);
+        pointer-events: none;
+        z-index: 1;
     }
 
     .home .home-img::after {
-        height: 3px;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
         background-color: transparent;
         box-shadow: 0 0 15px var(--skin-color);
+        pointer-events: none;
+        z-index: 3;
     }
 }
+
