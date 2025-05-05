@@ -367,7 +367,7 @@ h3.my-profession
     width: 350px;
     height: 450px;
     border-radius: 10px;
-    background-color: #111;
+    background-color: var(--bg-black-900);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: visible;
 }
@@ -483,6 +483,37 @@ h3.my-profession
 {
     margin-top: 10px;
 }
+
+.skills-icons-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.skills-icons-section .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-black-900);
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skills-icons i {
+    font-size: 50px;
+    color: var(--skin-color);
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+
+.skills-icons i:hover {
+    transform: scale(1.2);
+    color: var(--skin-color);
+}
+
 .about .about-content .skills
 {
     flex: 0 0 40%;
@@ -546,14 +577,12 @@ h3.my-profession
     font-weight: 700;
     color: var(--text-black-900);
 }
-.about .about-content .timeline-box
-{
+.about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
-    
 }
-.about .about-content .timeline
-{
+
+.about .about-content .timeline {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
@@ -561,18 +590,53 @@ h3.my-profession
     width: 100%;
     position: relative;
 }
-.about .about-content .timeline .timeline-item
-{
+
+.about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 22px; /* Aligns with timeline-icon center */
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+/* TIMELINE ICON (replaces circle-dot) */
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
-.about .about-content .timeline .timeline-item:last-child
-{
+
+.about .about-content .timeline .timeline-item:last-child {
     padding-bottom: 0;
 }
-.about .about-content .timeline .timeline-item::before
-{
+
+.about .about-content .timeline .timeline-item::before {
     content: '';
     width: 1px;
     position: absolute;
@@ -581,37 +645,51 @@ h3.my-profession
     top: 0;
     background-color: var(--skin-color);
 }
-.about .about-content .timeline .circle-dot
-{
-     position: absolute;
-     left: 0;
-     top: 0;
-     height: 15px;
-     width: 15px;
-     border-radius: 50%;
-     background-color: var(--skin-color);
+
+.about .about-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    box-shadow: 0 0 10px var(--skin-color); /* optional glow */
 }
-.about .about-content .timeline .timeline-date
-{
+
+.about .about-content .timeline .timeline-date {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
 }
-.about .about-content .timeline .timeline-date .fa
-{
+
+.about .about-content .timeline .timeline-date .fa {
     margin-right: 5px;
 }
-.about .about-content .timeline .timeline-title
-{
+
+.about .about-content .timeline .timeline-title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: capitalize;
     color: var(--text-black-900);
 }
-.about .about-content .timeline .timeline-text
-{
+
+.timeline-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+.about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
