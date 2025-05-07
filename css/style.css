@@ -3,6 +3,7 @@
 :root
 {
     --bg-black-900:#f2f2fc;
+    --bg-black-200: #d0d0d4;
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
@@ -14,6 +15,7 @@ body.dark
 {
     --bg-black-900:#151515;
     --bg-black-100:#222222;
+    --bg-black-200:#39393a;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
@@ -508,24 +510,106 @@ h3.my-profession
     color: var(--text-black-900);
 }
 
+
+
+
+
+
 .skills-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    padding: 40px 0;
 }
 
-.skills-icons i {
-    font-size: 50px;
-    color: var(--skin-color);
-    transition: 0.3s ease-in-out;
-    cursor: default;
+.skill-bubble {
+    width: 100px;
+    height: 100px;
+    background: var(--bg-black-200);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: float 6s ease-in-out infinite;
 }
 
-.skills-icons i:hover {
+.skill-bubble.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.skill-bubble:hover {
     transform: scale(1.2);
-    color: var(--skin-color);
+    box-shadow: 0 0 25px var(--skin-color);
+    background: linear-gradient(135deg, var(--skin-color), #ff6ec4);
 }
+
+.skill-bubble i {
+    font-size: 45px;
+    color: var(--skin-color);
+    transition: color 0.4s ease;
+}
+
+.skill-bubble:hover i {
+    color: #fff;
+}
+
+.skill-bubble::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.skill-bubble:hover::after {
+    opacity: 1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1);
+    }
+}
+
+@keyframes headingFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills-heading {
+    font-size: 36px;
+    color: var(--skin-color);
+    text-align: center;
+    animation: headingFadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+
 
 .about .about-content .skills
 {

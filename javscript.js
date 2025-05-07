@@ -97,3 +97,18 @@ const nav = document.querySelector(".nav"),
 });
 
 
+const skillBubbles = document.querySelectorAll('.skill-bubble');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+skillBubbles.forEach(bubble => {
+    observer.observe(bubble);
+});
