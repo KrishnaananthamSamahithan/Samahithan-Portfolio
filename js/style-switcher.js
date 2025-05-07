@@ -47,7 +47,12 @@ window.addEventListener("load", () => {
     }
 })
 
+let isManualNavigation = false;
+
+// Detect scroll and highlight nav links
 window.addEventListener('scroll', () => {
+    if (isManualNavigation) return;  // Do not run scroll logic if navigating manually
+
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav a');
 
@@ -66,5 +71,23 @@ window.addEventListener('scroll', () => {
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
+    });
+});
+
+// ----- NEW -----
+const navLinks = document.querySelectorAll('.nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        isManualNavigation = true;
+
+        // Remove active from all
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        link.classList.add('active');
+
+        // Allow scroll detection after short timeout (after section loaded)
+        setTimeout(() => {
+            isManualNavigation = false;
+        }, 1000); // 1 second is good (or same as your section transition)
     });
 });
