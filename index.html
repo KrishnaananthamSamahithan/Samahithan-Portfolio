@@ -10,7 +10,7 @@
     <link rel ="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel ="shortcut icon" href="./Images/favicon1.png" type="image/png">
+    <link rel ="shortcut icon" href="./Images/favicon.png" type="image/png">
     <!-- Style Switcher -->
     <link rel ="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel ="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
@@ -121,33 +121,27 @@
                                 <div class="skills-icons-section padd-15">
                                     <h3 class="title">My Skills</h3>
                                     <div class="skills-icons">
-                                        <i class="devicon-html5-plain colored" title="HTML"></i>
-                                        <i class="devicon-css3-plain colored" title="CSS"></i>
-                                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                                        <i class="devicon-php-plain colored" title="PHP"></i>
-                                        <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-                                        <i class="devicon-java-plain colored" title="Java"></i>
-                                        <i class="devicon-python-plain colored" title="Python"></i>
-                                        <i class="devicon-csharp-plain colored" title="C#"></i>
-                                        <i class="devicon-mysql-plain colored" title="SQL"></i>
-                                        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-                                        <i class="devicon-git-plain colored" title="Git"></i>
-                                        <!-- Modern Frameworks -->
-                                        <i class="devicon-react-original colored" title="React"></i>
-                                        <i class="devicon-nextjs-original colored" title="NextJS"></i>
-                                        <i class="devicon-nestjs-plain colored" title="NestJS"></i>
-
-                                        <!-- DevOps / Cloud -->
-                                        <i class="devicon-docker-plain colored" title="Docker"></i>
-                                        <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
-                                        <i class="devicon-azure-plain colored" title="Azure"></i>
-                                        <i class="devicon-googlecloud-plain colored" title="Google Cloud"></i>
-
-                                        <!-- Design Tools -->
-                                        <i class="devicon-figma-plain colored" title="Figma"></i>
-                                        <i class="devicon-xd-plain colored" title="Adobe XD"></i>
-                                        <i class="devicon-photoshop-plain colored" title="Photoshop"></i>
-                                        <i class="devicon-lightroom-plain colored" title="Lightroom"></i>
+                                        <div class="skill-bubble" data-tooltip="HTML5"><i class="devicon-html5-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="CSS3"><i class="devicon-css3-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="PHP"><i class="devicon-php-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Bootstrap"><i class="devicon-bootstrap-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Java"><i class="devicon-java-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Python"><i class="devicon-python-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="C#"><i class="devicon-csharp-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="SQL"><i class="devicon-mysql-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="MongoDB"><i class="devicon-mongodb-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Git"><i class="devicon-git-plain colored"></i></div>
+                                        <div class="skill-bubble pulse" data-tooltip="React"><i class="devicon-react-original colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="NestJS"><i class="devicon-nestjs-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Docker"><i class="devicon-docker-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="AWS"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Azure"><i class="devicon-azure-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Google Cloud"><i class="devicon-googlecloud-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Figma"><i class="devicon-figma-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Adobe XD"><i class="devicon-xd-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="Photoshop"><i class="devicon-photoshop-plain colored"></i></div>
+                                        <div class="skill-bubble" data-tooltip="AfterEffects"><i class="devicon-aftereffects-plain colored"></i></div>
                                     </div>
                                 </div>    
                             </div>
@@ -384,6 +378,25 @@
         
                 <div class="portfolio-cards">
 
+                        <!-- Portfolio Card Start -->
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./Images/weather.png" alt="Movie App">
+                                <div class="portfolio-overlay">
+                                    <h3>Mobile Application</h3>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h2 class="portfolio-title">Weather App</h2>
+                                <p class="portfolio-desc">A responsive vehicle rental solution with real time booking management.</p>
+                                <div class="portfolio-tags">
+                                    <span>Flutter</span><span>Rest API</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Portfolio Card End -->
+
                      <!-- Portfolio Card Start -->
                      <div class="portfolio-card">
                         <div class="portfolio-image">
@@ -444,7 +457,7 @@
                     <!-- Portfolio Card Start -->
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="./Images/vehicle.jpg" alt="Vehicle Booking">
+                            <img src="./Images/vehicle.png" alt="Vehicle Booking">
                             <div class="portfolio-overlay">
                                 <h3>UI / UX Design</h3>
                             </div>
