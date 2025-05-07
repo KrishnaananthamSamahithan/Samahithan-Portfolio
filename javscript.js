@@ -112,3 +112,5 @@ const observer = new IntersectionObserver(entries => {
 skillBubbles.forEach(bubble => {
     observer.observe(bubble);
 });
+
+

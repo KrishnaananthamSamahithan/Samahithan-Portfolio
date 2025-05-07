@@ -8,6 +8,7 @@
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
+    --text-black-800:#0c0c0c;
     --bg-black-700: #151515;
 
 }
@@ -19,6 +20,7 @@ body.dark
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
+    --text-black-800:#e9e9e9;
 }
 html, body {
     width: 100%;
@@ -583,10 +585,10 @@ h3.my-profession
 
 @keyframes float {
     0%, 100% {
-        transform: translateY(0) scale(1);
+        transform: translateY(0) scale(0.9);
     }
     50% {
-        transform: translateY(-10px) scale(1);
+        transform: translateY(-10px) scale(1.05);
     }
 }
 
@@ -904,12 +906,12 @@ h3.my-profession
 }
 
 .portfolio-card {
-    background: #fff;
+    background: var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    min-height: 480px;
+    min-height: 440px;
 }
 
 .portfolio-card:hover {
@@ -926,7 +928,7 @@ h3.my-profession
     width: 100%;
     height: 200px;
     object-fit: contain; /* Change from cover to contain */
-    background-color: #f3f3f3; /* Optional - if transparent images, show background */
+    background-color: var(--bg-black-100); /* Optional - if transparent images, show background */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -949,12 +951,12 @@ h3.my-profession
 .portfolio-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--text-black-900);
 }
 
 .portfolio-desc {
     font-size: 0.95rem;
-    color: #666;
+    color: var(--text-black-800);
     margin-bottom: 15px;
 }
 
@@ -964,8 +966,8 @@ h3.my-profession
 
 .portfolio-tags span {
     display: inline-block;
-    background-color: #e3e3e3;
-    color: #333;
+    background-color: var(--bg-black-200);
+    color: var(--text-black-800);
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 0.75rem;
@@ -975,9 +977,10 @@ h3.my-profession
 .portfolio-btn {
     font-size: 15px;
     font-weight: 900;
-    padding: 12px 35px;
+    margin-top: 10px;
+    padding: 10px 30px;
     color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     display: inline-block;
     white-space: nowrap;
     border: none;
