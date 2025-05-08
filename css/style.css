@@ -1251,7 +1251,17 @@ body.dark .social-media .github i {
         height: 450px;
         transform: scale(1.2);
     }
+
+    .skill-bubble {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-bubble i {
+        font-size: 35px;
+    }
 }
+
 @media (max-width:767px)
 {
     .contact .contact-form .col-6,
@@ -1386,6 +1396,20 @@ body.dark .social-media .github i {
         box-shadow: 0 0 15px var(--skin-color);
         pointer-events: none;
         z-index: 3;
+    }
+
+    .skill-bubble {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-bubble i {
+        font-size: 30px;
+    }
+
+    .skill-bubble::after {
+        font-size: 10px;
+        bottom: -25px;
     }
 }
 
